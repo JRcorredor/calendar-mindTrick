@@ -1,0 +1,18 @@
+.calendar-formart {
+
+    display: flex;
+    flex-direction: row;
+
+}
+.calendar-formart-global {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+input {
+width: 8vw;
+border: 0;
+text-align: center;
+}

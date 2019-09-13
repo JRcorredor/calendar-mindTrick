@@ -10,10 +10,12 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 export namespace Components {
   interface AppHome {}
-  interface AppProfile {
+  interface CalendarMindtric {
     'name': string;
   }
-  interface AppRoot {}
+  interface MesCalendar {
+    'name': string;
+  }
 }
 
 declare global {
@@ -25,35 +27,37 @@ declare global {
     new (): HTMLAppHomeElement;
   };
 
-  interface HTMLAppProfileElement extends Components.AppProfile, HTMLStencilElement {}
-  var HTMLAppProfileElement: {
-    prototype: HTMLAppProfileElement;
-    new (): HTMLAppProfileElement;
+  interface HTMLCalendarMindtricElement extends Components.CalendarMindtric, HTMLStencilElement {}
+  var HTMLCalendarMindtricElement: {
+    prototype: HTMLCalendarMindtricElement;
+    new (): HTMLCalendarMindtricElement;
   };
 
-  interface HTMLAppRootElement extends Components.AppRoot, HTMLStencilElement {}
-  var HTMLAppRootElement: {
-    prototype: HTMLAppRootElement;
-    new (): HTMLAppRootElement;
+  interface HTMLMesCalendarElement extends Components.MesCalendar, HTMLStencilElement {}
+  var HTMLMesCalendarElement: {
+    prototype: HTMLMesCalendarElement;
+    new (): HTMLMesCalendarElement;
   };
   interface HTMLElementTagNameMap {
     'app-home': HTMLAppHomeElement;
-    'app-profile': HTMLAppProfileElement;
-    'app-root': HTMLAppRootElement;
+    'calendar-mindtric': HTMLCalendarMindtricElement;
+    'mes-calendar': HTMLMesCalendarElement;
   }
 }
 
 declare namespace LocalJSX {
   interface AppHome extends JSXBase.HTMLAttributes<HTMLAppHomeElement> {}
-  interface AppProfile extends JSXBase.HTMLAttributes<HTMLAppProfileElement> {
+  interface CalendarMindtric extends JSXBase.HTMLAttributes<HTMLCalendarMindtricElement> {
     'name'?: string;
   }
-  interface AppRoot extends JSXBase.HTMLAttributes<HTMLAppRootElement> {}
+  interface MesCalendar extends JSXBase.HTMLAttributes<HTMLMesCalendarElement> {
+    'name'?: string;
+  }
 
   interface IntrinsicElements {
     'app-home': AppHome;
-    'app-profile': AppProfile;
-    'app-root': AppRoot;
+    'calendar-mindtric': CalendarMindtric;
+    'mes-calendar': MesCalendar;
   }
 }
 
